@@ -2,7 +2,6 @@
   <h1 class="contenedor__skills-h1">Habilidades</h1>
   <ul class="contenedor__lenguajes">
     <div>
-      <p>FrontEnd:</p>
       <li class="logo-lenguajes">
         <img
           alt="HTML"
@@ -37,7 +36,6 @@
       </li>
     </div>
     <div>
-      <p>Utilities</p>
       <li class="logo-lenguajes">
         <img alt="Git" title="Git" class="logo-lenguajes--img" src="/git.svg" />
       </li>
@@ -59,7 +57,6 @@
       </li>
     </div>
     <div>
-      <p>Backend:</p>
       <li class="logo-lenguajes">
         <img
           alt="Node"
@@ -78,7 +75,6 @@
       </li>
     </div>
     <div>
-      <p>DBB:</p>
       <li class="logo-lenguajes">
         <img
           alt="MongoDB"
@@ -96,9 +92,9 @@
     height: 50px;
   }
   div {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    padding: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5em 0em;
     background-color: grey;
   }
   h1 {
