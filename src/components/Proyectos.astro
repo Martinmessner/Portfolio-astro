@@ -8,7 +8,7 @@ import OpenGithublink from '../../public/OpenGithublink.astro';
 </div>
 
 <section class="contenedor__proyecto--div" data-dark>
-  <picture class="contenedor__proyecto-explicacion">
+  <figure class="contenedor__proyecto-explicacion">
     <img
       src="/btc.webp"
       alt="bitcoin"
@@ -35,8 +35,8 @@ import OpenGithublink from '../../public/OpenGithublink.astro';
       >
     </div>
     <p>App de Bitcoin | WebSockets React</p>
-  </picture>
-  <picture class="contenedor__proyecto-explicacion">
+  </figure>
+  <figure class="contenedor__proyecto-explicacion">
     <img
       src="/busqueda-img.webp"
       alt="busqueda-img-app"
@@ -61,8 +61,8 @@ import OpenGithublink from '../../public/OpenGithublink.astro';
     </div>
     <p>Buscador de Imagenes</p>
     <p>React - CSS</p>
-  </picture>
-  <picture class="contenedor__proyecto-explicacion">
+  </figure>
+  <figure class="contenedor__proyecto-explicacion">
     <img
       src="/chatgpt.PNG"
       alt="entrevista-midudev-react"
@@ -85,8 +85,8 @@ import OpenGithublink from '../../public/OpenGithublink.astro';
       >
     </div>
     <p>ChatGPT Express con React</p>
-  </picture>
-  <picture class="contenedor__proyecto-explicacion">
+  </figure>
+  <figure class="contenedor__proyecto-explicacion">
     <div class="cardmodal"></div>
     <img
       src="/ecommerce2.PNG"
@@ -111,8 +111,8 @@ import OpenGithublink from '../../public/OpenGithublink.astro';
     </div>
     <p>Ecommerce creado con:</p>
     <p>HTML - CSS - JavaScript - Node - Express - MongoDB</p>
-  </picture>
-  <picture class="contenedor__proyecto-explicacion">
+  </figure>
+  <figure class="contenedor__proyecto-explicacion">
     <img
       src="/paisesReact.PNG"
       alt="paisesReactt"
@@ -135,8 +135,8 @@ import OpenGithublink from '../../public/OpenGithublink.astro';
       >
     </div>
     <p>App de Paises con React y React-draggable</p>
-  </picture>
-  <picture class="contenedor__proyecto-explicacion">
+  </figure>
+  <figure class="contenedor__proyecto-explicacion">
     <img
       src="/crudreact.PNG"
       alt="react-crud"
@@ -159,8 +159,8 @@ import OpenGithublink from '../../public/OpenGithublink.astro';
       >
     </div>
     <p>App de Notas con React</p>
-  </picture>
-  <picture class="contenedor__proyecto-explicacion">
+  </figure>
+  <figure class="contenedor__proyecto-explicacion">
     <img
       src="/navideño.PNG"
       alt="navideño-react"
@@ -183,8 +183,8 @@ import OpenGithublink from '../../public/OpenGithublink.astro';
       >
     </div>
     <p>App de Regalos con React</p>
-  </picture>
-  <picture class="contenedor__proyecto-explicacion">
+  </figure>
+  <figure class="contenedor__proyecto-explicacion">
     <img
       src="/entrevista-tecnica.webp"
       alt="entrevista-midudev-react"
@@ -207,8 +207,8 @@ import OpenGithublink from '../../public/OpenGithublink.astro';
       >
     </div>
     <p>Entrevista Tecnica - Midudev</p>
-  </picture>
-  <picture class="contenedor__proyecto-explicacion">
+  </figure>
+  <figure class="contenedor__proyecto-explicacion">
     <img
       src="/ta-te-ti.webp"
       alt="entrevista-midudev-react"
@@ -231,8 +231,8 @@ import OpenGithublink from '../../public/OpenGithublink.astro';
       >
     </div>
     <p>Ta-te-ti con React</p>
-  </picture>
-  <picture class="contenedor__proyecto-explicacion">
+  </figure>
+  <figure class="contenedor__proyecto-explicacion">
     <img
       src="/frontendmentor-landingpage.PNG"
       alt="frontend-mentor"
@@ -256,7 +256,7 @@ import OpenGithublink from '../../public/OpenGithublink.astro';
     </div>
     <p>Landing Page FrontEnd Mentor</p>
     <p>HTML - CSS - JavaScript</p>
-  </picture>
+  </figure>
 </section>
 
 <style>
@@ -266,11 +266,10 @@ import OpenGithublink from '../../public/OpenGithublink.astro';
 
   section {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(2, minmax(100px, 430px));
+    justify-content: center;
     text-align: center;
-    gap: 1em;
-    width: 70%;
-    margin: auto;
+    gap: 3em;
   }
   button {
     padding: 0.2em;
@@ -278,10 +277,12 @@ import OpenGithublink from '../../public/OpenGithublink.astro';
     border: none;
     cursor: pointer;
   }
+
   button:hover {
-    scale: 1.2;
+    transform: scale(1.2);
   }
-  picture {
+
+  figure {
     border: 2px white solid;
   }
   .contenedor__proyectos--h2 {
