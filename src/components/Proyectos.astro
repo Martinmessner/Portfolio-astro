@@ -4,7 +4,7 @@ import OpenGithublink from '../../public/OpenGithublink.astro';
 ---
 
 <div class="contenedor__proyectos" id="proyectos" data-dark>
-  <h2 class="contenedor__proyectos--h2">Proyectos</h2>
+  <h1 class="contenedor__proyectos--h2">Proyectos</h1>
 </div>
 
 <section class="contenedor__proyecto--div" data-dark>
@@ -15,7 +15,7 @@ import OpenGithublink from '../../public/OpenGithublink.astro';
       title="bitcoin-app"
       class="contenedor__proyecto--img"
     />
-    <p>Bitcoin</p>
+
     <div>
       <a
         rel="noopener noreferrer"
@@ -34,7 +34,7 @@ import OpenGithublink from '../../public/OpenGithublink.astro';
         <button class="boton__div" type="submit"><OpenGithublink /></button></a
       >
     </div>
-    <p>React - WebSockets</p>
+    <p>App de Bitcoin | WebSockets React</p>
   </picture>
   <picture class="contenedor__proyecto-explicacion">
     <img
@@ -59,7 +59,7 @@ import OpenGithublink from '../../public/OpenGithublink.astro';
         <button class="boton__div" type="submit"><OpenGithublink /></button></a
       >
     </div>
-    <p>Busqueda de Imagenes</p>
+    <p>Buscador de Imagenes</p>
     <p>React - CSS</p>
   </picture>
   <picture class="contenedor__proyecto-explicacion">
@@ -134,7 +134,7 @@ import OpenGithublink from '../../public/OpenGithublink.astro';
         <button class="boton__div" type="submit"><OpenGithublink /></button></a
       >
     </div>
-    <p>API de Paises con React y React-draggable</p>
+    <p>App de Paises con React y React-draggable</p>
   </picture>
   <picture class="contenedor__proyecto-explicacion">
     <img
@@ -206,7 +206,7 @@ import OpenGithublink from '../../public/OpenGithublink.astro';
         <button class="boton__div" type="submit"><OpenGithublink /></button></a
       >
     </div>
-    <p>Practica de Entrevista con React - Midudev.</p>
+    <p>Entrevista Tecnica - Midudev</p>
   </picture>
   <picture class="contenedor__proyecto-explicacion">
     <img
@@ -263,12 +263,14 @@ import OpenGithublink from '../../public/OpenGithublink.astro';
   img {
     width: 100%;
   }
+
   section {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     text-align: center;
-    gap: 4em;
-    width: 100%;
+    gap: 1em;
+    width: 70%;
+    margin: auto;
   }
   button {
     padding: 0.2em;
@@ -281,5 +283,10 @@ import OpenGithublink from '../../public/OpenGithublink.astro';
   }
   picture {
     border: 2px white solid;
+  }
+  .contenedor__proyectos--h2 {
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: 0.3em;
   }
 </style>

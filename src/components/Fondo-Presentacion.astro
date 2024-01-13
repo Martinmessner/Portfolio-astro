@@ -1,15 +1,24 @@
-<header class="contenedor__fondo--presentacion" id="inicio">
-  <section class="contenedor__section">
-    <h2 class="texto__presentacion">Hola, Soy Martin Messner</h2>
-    <p class="texto__presentacion">Desarrollador Frontend</p>
-  </section>
-
-  <ul class="iconos__presentacion">
-    <li class="texto__presentacion--div">
-      <a class="texto__presentacion--pdf" download href="/Martin Messner CV.pdf"
-        >Descargar CV <i class="fa-solid fa-file-arrow-down"></i></a
-      >
+<header class="contenedor__fondo--presentacion">
+  <ul class="ul-header">
+    <li>
+      <a href="#inicio">Inicio</a>
     </li>
+    <li>
+      <a href="#skills">Proyectos</a>
+    </li>
+    <li>
+      <a href="#skills">Skills</a>
+    </li>
+    <li>
+      <a href="#contacto">Contactame</a>
+    </li>
+  </ul>
+</header>
+
+<section class="contenedor__section" id="inicio">
+  <h1 class="texto__presentacion">Hola, Soy Martin Messner</h1>
+  <h2 class="texto__presentacion">Desarrollador Frontend</h2>
+  <ul class="iconos__presentacion">
     <li>
       <a
         href="https://www.linkedin.com/in/martin-gabriel-messner-98a587217/"
@@ -28,24 +37,45 @@
       <a href="#contacto"><i class="fas fa-envelope iconosfooter"></i></a>
     </li>
   </ul>
-</header>
+  <div class="texto__presentacion--div">
+    <a class="texto__presentacion--pdf" download href="/Martin Messner CV.pdf">
+      Descargar CV <i class="fa-solid fa-file-arrow-down"></i></a
+    >
+  </div>
+</section>
 
 <style>
+  .contenedor__fondo--presentacion {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+  }
+  .ul-header {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    padding: 0.7em;
+    font-size: 1.3em;
+  }
   svg {
-    width: 22px;
+    height: 1.4em;
+  }
+
+  svg:hover {
+    scale: 1.2;
   }
   .iconos__presentacion {
     display: flex;
-    gap: 0.5em;
+    gap: 3em;
     justify-content: center;
     padding: 1em;
   }
   a {
     color: red;
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
   .contenedor__section {
-    padding-top: 2em;
+    padding-top: 4em;
     text-align: center;
   }
 </style>

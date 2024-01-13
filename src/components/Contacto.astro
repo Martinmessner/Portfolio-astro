@@ -1,7 +1,6 @@
 <section class="contenedor__form" id="contacto" data-dark>
-  <h2 class="contenedor__form--h2">Contactame</h2>
+  <h1 class="contenedor__form--h2">Contactame</h1>
   <div class="contenedor__input--div">
-    <h2 class="h2__input">Espero tu mensaje</h2>
     <form class="contenedor__input" method="POST" data-netlify="true">
       <input
         class="form__input"
@@ -37,20 +36,28 @@
 </section>
 
 <style>
+  input::placeholder,
+  textarea::placeholder {
+    color: #dddddd;
+  }
+
   form {
     padding: 10px 0px;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     margin: auto;
   }
 
-  /* Estilos de cada input del form  */
   .form__input {
     margin: 5px;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 0.9em;
+    border-radius: 7px;
     border: 1px solid #dddddd;
+  }
+
+  .form__input:hover {
+    border: 1px red solid;
   }
 
   .boton__enviar {
@@ -58,6 +65,10 @@
     font-size: 1em;
     cursor: pointer;
     background-color: rgb(0, 0, 0);
-    color: rgb(255 153 0);
+    color: #dddddd;
+  }
+  .contenedor__form--h2 {
+    text-align: center;
+    padding-top: 1em;
   }
 </style>
