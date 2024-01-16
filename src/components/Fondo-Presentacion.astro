@@ -27,21 +27,23 @@
   </div>
 
   <ul class="iconos__presentacion">
-    <li>
+    <li class="iconos__li">
       <a
         href="https://www.linkedin.com/in/martin-gabriel-messner-98a587217/"
         class="footer__linkedin"
-        target="_blank"><i class="fa-brands fa-linkedin iconosfooter"></i></a
+        target="_blank"
+        ><i class="fa-brands fa-linkedin iconosfooter linkedin"></i>Linkedin</a
       >
     </li>
-    <li>
+    <li class="iconos__li">
       <a
         href="https://github.com/Martinmessner?tab=repositories"
         class="footer__instagram"
-        target="_blank"><i class="fa-brands fa-github iconosfooter"></i></a
+        target="_blank"
+        ><i class="fa-brands fa-github iconosfooter"></i>GitHub</a
       >
     </li>
-    <li class="footer__envelope">
+    <li class="iconos__li" class="footer__envelope">
       <a href="#contacto"><i class="fas fa-envelope iconosfooter"></i></a>
     </li>
   </ul>
@@ -53,6 +55,14 @@
 </section>
 
 <style>
+  .iconos__li {
+    border: 2px #777777 solid;
+    border-radius: 20px;
+    width: 11em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
   .texto__completo {
     display: flex;
     align-items: center;
@@ -90,12 +100,20 @@
     justify-content: center;
     padding: 1em;
   }
+  .iconos__presentacion > li > a {
+    color: #dddddd;
+  }
+  .linkedin {
+    color: rgb(35, 98, 236);
+  }
+
+  .texto__presentacion--pdf {
+    color: blueviolet;
+  }
   nav > .ul-header > li > a {
     color: #dddddd;
   }
-  .iconos__presentacion > li > a {
-    color: red;
-  }
+
   a {
     font-size: 1.3em;
   }
