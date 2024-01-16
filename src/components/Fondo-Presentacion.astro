@@ -18,9 +18,13 @@
 </header>
 
 <section class="contenedor__section" id="inicio">
-  <h1 class="texto__presentacion">Hola, Soy Martin Messner</h1>
-  <h2 class="texto__presentacion">Desarrollador Frontend</h2>
-  <h2 class="texto__presentacion">De Buenos Aires, Argentina 🟦⚪🟦</h2>
+  <h1 class="texto__presentacion">
+    Hola, Soy Martin Messner, Desarrollador Web.
+  </h1>
+  <div class="texto__completo">
+    <h2 class="texto__presentacion">De Buenos Aires, Argentina</h2>
+    <img src="/argentina.webp" alt="Argentina" title="Argentina" />
+  </div>
 
   <ul class="iconos__presentacion">
     <li>
@@ -49,6 +53,18 @@
 </section>
 
 <style>
+  .texto__completo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4em;
+  }
+  .texto__completo img {
+    width: 3.1em;
+  }
+  .texto__presentacion {
+    line-height: 2;
+  }
   .contenedor__fondo--presentacion {
     position: fixed;
     background-color: black;
@@ -74,10 +90,16 @@
     justify-content: center;
     padding: 1em;
   }
-  a {
+  nav > .ul-header > li > a {
+    color: #dddddd;
+  }
+  .iconos__presentacion > li > a {
     color: red;
+  }
+  a {
     font-size: 1.3em;
   }
+
   .contenedor__section {
     padding-top: 4em;
     text-align: center;
