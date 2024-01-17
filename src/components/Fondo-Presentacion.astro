@@ -1,3 +1,7 @@
+---
+import Curriculum from '../../public/Curriculum.astro';
+---
+
 <header class="contenedor__fondo--presentacion">
   <nav>
     <ul class="ul-header">
@@ -5,7 +9,7 @@
         <a href="#inicio">Inicio</a>
       </li>
       <li>
-        <a href="#skills">Proyectos</a>
+        <a href="#proyectos">Proyectos</a>
       </li>
       <li>
         <a href="#skills">Skills</a>
@@ -32,37 +36,39 @@
         href="https://www.linkedin.com/in/martin-gabriel-messner-98a587217/"
         class="footer__linkedin"
         target="_blank"
-        ><i class="fa-brands fa-linkedin iconosfooter linkedin"></i>Linkedin</a
+        ><i class="fa-brands fa-linkedin linkedin"></i>Linkedin</a
       >
     </li>
     <li class="iconos__li">
       <a
         href="https://github.com/Martinmessner?tab=repositories"
         class="footer__instagram"
-        target="_blank"
-        ><i class="fa-brands fa-github iconosfooter"></i>GitHub</a
+        target="_blank"><i class="fa-brands fa-github"></i>GitHub</a
       >
     </li>
-    <li class="iconos__li" class="footer__envelope">
-      <a href="#contacto"><i class="fas fa-envelope iconosfooter"></i></a>
+
+    <li class="iconos__li">
+      <a
+        class="texto__presentacion--pdf"
+        download
+        href="/Martin Messner CV.pdf"
+      >
+        Curriculum <Curriculum /></a
+      >
     </li>
   </ul>
-  <div class="texto__presentacion--div">
-    <a class="texto__presentacion--pdf" download href="/Martin Messner CV.pdf">
-      Descargar CV <i class="fa-solid fa-file-arrow-down"></i></a
-    >
-  </div>
 </section>
 
 <style>
   .iconos__li {
     border: 2px #777777 solid;
-    border-radius: 20px;
-    width: 11em;
-    justify-content: center;
-    align-items: center;
+    border-radius: 44px;
+    letter-spacing: 1px;
+    padding: 1em;
     display: flex;
+    align-items: center;
   }
+
   .texto__completo {
     display: flex;
     align-items: center;
@@ -85,10 +91,7 @@
     justify-content: center;
     gap: 4em;
     padding: 0.7em;
-    font-size: 1.3em;
-  }
-  svg {
-    height: 1.4em;
+    font-size: 1.2em;
   }
 
   svg:hover {
@@ -96,20 +99,20 @@
   }
   .iconos__presentacion {
     display: flex;
-    gap: 3em;
+    gap: 1.1em;
     justify-content: center;
     padding: 1em;
+    flex-wrap: wrap;
   }
   .iconos__presentacion > li > a {
     color: #dddddd;
+    display: flex;
+    align-items: center;
   }
   .linkedin {
     color: rgb(35, 98, 236);
   }
 
-  .texto__presentacion--pdf {
-    color: blueviolet;
-  }
   nav > .ul-header > li > a {
     color: #dddddd;
   }
