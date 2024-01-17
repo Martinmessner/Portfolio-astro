@@ -2,263 +2,37 @@
 import Externallink from '../../public/Externallink.astro';
 import OpenGithublink from '../../public/OpenGithublink.astro';
 import { PROYECTOS } from './proyectos';
-
-console.log(PROYECTOS);
 ---
 
 <div class="contenedor__proyectos" id="proyectos">
   <h1 class="contenedor__proyectos--h2">Proyectos</h1>
 </div>
-
 <section class="contenedor__proyecto--div">
-  <figure class="contenedor__proyecto-explicacion">
-    <img
-      src="/btc.webp"
-      alt="bitcoin"
-      title="bitcoin-app"
-      class="contenedor__proyecto--img"
-    />
-
-    <div>
-      <a
-        rel="noopener noreferrer"
-        href="https://cryptocodebtc.netlify.app/"
-        target="_blank"
-      >
-        <button class="boton__div" type="submit">
-          <Externallink />
-        </button></a
-      >
-      <a
-        rel="noopener noreferrer"
-        href="https://github.com/Martinmessner/WebSocket-React-BTC"
-        target="_blank"
-      >
-        <button class="boton__div" type="submit"><OpenGithublink /></button></a
-      >
-    </div>
-    <p>App de Bitcoin | WebSockets React</p>
-  </figure>
-  <figure class="contenedor__proyecto-explicacion">
-    <img
-      src="/busqueda-img.webp"
-      alt="busqueda-img-app"
-      title="busqueda-de-imagenes"
-      class="contenedor__proyecto--img"
-    />
-    <div>
-      <a
-        rel="noopener noreferrer"
-        href="https://imagenhd-react.netlify.app/"
-        target="_blank"
-      >
-        <button class="boton__div" type="submit"> <Externallink /></button></a
-      >
-      <a
-        rel="noopener noreferrer"
-        href="https://github.com/Martinmessner/buscadorimagenes-react"
-        target="_blank"
-      >
-        <button class="boton__div" type="submit"><OpenGithublink /></button></a
-      >
-    </div>
-    <p>Buscador de Imagenes | React</p>
-  </figure>
-  <figure class="contenedor__proyecto-explicacion">
-    <img
-      src="/chatgpt.PNG"
-      alt="entrevista-midudev-react"
-      class="contenedor__proyecto--img"
-    />
-    <div>
-      <a
-        rel="noopener noreferrer"
-        href="https://chatgpt-messner.netlify.app/"
-        target="_blank"
-      >
-        <button class="boton__div" type="submit"> <Externallink /></button></a
-      >
-      <a
-        rel="noopener noreferrer"
-        href="https://github.com/Martinmessner/messnerIA-openAI"
-        target="_blank"
-      >
-        <button class="boton__div" type="submit"><OpenGithublink /></button></a
-      >
-    </div>
-    <p>ChatGPT Express con React</p>
-  </figure>
-  <figure class="contenedor__proyecto-explicacion">
-    <div class="cardmodal"></div>
-    <img
-      src="/ecommerce2.PNG"
-      alt="ecommerce"
-      class="contenedor__proyecto--img"
-    />
-    <div>
-      <a
-        rel="noopener noreferrer"
-        href="https://ecommerce-test-1l37.onrender.com/login"
-        target="_blank"
-      >
-        <button class="boton__div" type="submit"> <Externallink /></button></a
-      >
-      <a
-        rel="noopener noreferrer"
-        href="https://github.com/Martinmessner/API-REST-Ecommerce-NodeJs"
-        target="_blank"
-      >
-        <button class="boton__div" type="submit"><OpenGithublink /></button></a
-      >
-    </div>
-    <p>Ecommerce creado con:</p>
-    <p>HTML - CSS - JavaScript - Node - Express - MongoDB</p>
-  </figure>
-  <figure class="contenedor__proyecto-explicacion">
-    <img
-      src="/paisesReact.PNG"
-      alt="paisesReactt"
-      class="contenedor__proyecto--img"
-    />
-    <div>
-      <a
-        rel="noopener noreferrer"
-        href="https://allpaises.netlify.app/"
-        target="_blank"
-      >
-        <button class="boton__div" type="submit"> <Externallink /></button></a
-      >
-      <a
-        rel="noopener noreferrer"
-        href="https://github.com/Martinmessner/React-Paises"
-        target="_blank"
-      >
-        <button class="boton__div" type="submit"><OpenGithublink /></button></a
-      >
-    </div>
-    <p>App de Paises con React y React-draggable</p>
-  </figure>
-  <figure class="contenedor__proyecto-explicacion">
-    <img
-      src="/crudreact.PNG"
-      alt="react-crud"
-      class="contenedor__proyecto--img"
-    />
-    <div>
-      <a
-        rel="noopener noreferrer"
-        href="https://notas-efectosublimados.netlify.app/"
-        target="_blank"
-      >
-        <button class="boton__div" type="submit"> <Externallink /></button></a
-      >
-      <a
-        rel="noopener noreferrer"
-        href="https://github.com/Martinmessner/CRUDREACT-NOTAS"
-        target="_blank"
-      >
-        <button class="boton__div" type="submit"><OpenGithublink /></button></a
-      >
-    </div>
-    <p>App de Notas con React</p>
-  </figure>
-  <figure class="contenedor__proyecto-explicacion">
-    <img
-      src="/navideño.PNG"
-      alt="navideño-react"
-      class="contenedor__proyecto--img"
-    />
-    <div>
-      <a
-        rel="noopener noreferrer"
-        href="https://regalos-navidenios.netlify.app/"
-        target="_blank"
-      >
-        <button class="boton__div" type="submit"> <Externallink /></button></a
-      >
-      <a
-        rel="noopener noreferrer"
-        href="https://github.com/Martinmessner/challenge-goncy-advency"
-        target="_blank"
-      >
-        <button class="boton__div" type="submit"><OpenGithublink /></button></a
-      >
-    </div>
-    <p>App de Regalos con React</p>
-  </figure>
-  <figure class="contenedor__proyecto-explicacion">
-    <img
-      src="/entrevista-tecnica.webp"
-      alt="entrevista-midudev-react"
-      class="contenedor__proyecto--img"
-    />
-    <div>
-      <a
-        rel="noopener noreferrer"
-        href="https://practica-de-entrevista-tenica.netlify.app/"
-        target="_blank"
-      >
-        <button class="boton__div" type="submit"> <Externallink /></button></a
-      >
-      <a
-        rel="noopener noreferrer"
-        href="https://github.com/Martinmessner/entrevista-tecnica-react-midudev-prueba"
-        target="_blank"
-      >
-        <button class="boton__div" type="submit"><OpenGithublink /></button></a
-      >
-    </div>
-    <p>Entrevista Tecnica - Midudev</p>
-  </figure>
-  <figure class="contenedor__proyecto-explicacion">
-    <img
-      src="/ta-te-ti.webp"
-      alt="entrevista-midudev-react"
-      class="contenedor__proyecto--img"
-    />
-    <div>
-      <a
-        rel="noopener noreferrer"
-        href="https://tateti-messi.netlify.app/"
-        target="_blank"
-      >
-        <button class="boton__div" type="submit"> <Externallink /></button></a
-      >
-      <a
-        rel="noopener noreferrer"
-        href="https://github.com/Martinmessner/tateti-practica-react-vite"
-        target="_blank"
-      >
-        <button class="boton__div" type="submit"><OpenGithublink /></button></a
-      >
-    </div>
-    <p>Ta-te-ti con React</p>
-  </figure>
-  <figure class="contenedor__proyecto-explicacion">
-    <img
-      src="/frontendmentor-landingpage.PNG"
-      alt="frontend-mentor"
-      class="contenedor__proyecto--img"
-    />
-    <div>
-      <a
-        rel="noopener noreferrer"
-        href="https://landin-page-frontendmentor.netlify.app/"
-        target="_blank"
-      >
-        <button class="boton__div" type="submit"> <Externallink /></button></a
-      >
-      <a
-        rel="noopener noreferrer"
-        href="https://github.com/Martinmessner/FRONTENDMENTOR-LandingPage"
-        target="_blank"
-      >
-        <button class="boton__div" type="submit"><OpenGithublink /></button></a
-      >
-    </div>
-    <p>Landing Page FrontEnd Mentor</p>
-    <p>HTML - CSS - JavaScript</p>
-  </figure>
+  {
+    PROYECTOS.map(({ imagen, title_alt, title, url, github }) => (
+      <figure class="contenedor__proyecto-explicacion">
+        <img
+          src={imagen}
+          alt={title_alt}
+          title={title}
+          class="contenedor__proyecto--img"
+        />
+        <div>
+          <a rel="noopener noreferrer" href={url} target="_blank">
+            <button class="boton__div" type="submit">
+              <Externallink />
+            </button>
+          </a>
+          <a rel="noopener noreferrer" href={github} target="_blank">
+            <button class="boton__div" type="submit">
+              <OpenGithublink />
+            </button>
+          </a>
+          <p>{title}</p>
+        </div>
+      </figure>
+    ))
+  }
 </section>
 
 <style>
