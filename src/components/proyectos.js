@@ -21,7 +21,7 @@ export const PROYECTOS = [
         github: "https://github.com/Martinmessner/buscadorimagenes-react"
     }, 
     {
-      imagen:"/crudreact.PNG",
+      imagen:"/crudreact.webp",
       title_alt:"Lista de Tareas",
       title:"App de Notas | React",
       url :"https://notas-efectosublimados.netlify.app/",
