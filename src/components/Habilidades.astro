@@ -1,78 +1,18 @@
+---
+import { SKILLS } from './proyectos';
+---
+
 <main id="skills" class="contenedor__skills" id="skills">
   <h1 class="contenedor__skills-h1">Habilidades</h1>
+
   <ul class="contenedor__lenguajes">
-    <li class="logo-lenguajes">
-      <img
-        alt="HTML"
-        title="HTML"
-        class="logo-lenguajes--img"
-        src="/htmll.svg"
-      />
-      <li class="logo-lenguajes">
-        <img alt="CSS" title="CSS" class="logo-lenguajes--img" src="/css.svg" />
-      </li>
-      <li class="logo-lenguajes">
-        <img
-          alt="JavaScript"
-          title="JavaScript"
-          class="logo-lenguajes--img"
-          src="/jss.svg"
-        />
-      </li>
-      <li class="logo-lenguajes">
-        <img
-          alt="TypeScript"
-          title="TypeScript"
-          class="logo-lenguajes--img"
-          src="/tsc.png"
-        />
-      </li>
-      <li class="logo-lenguajes">
-        <img
-          alt="React"
-          title="React"
-          class="logo-lenguajes--img"
-          src="/react.png"
-        />
-      </li>
-    </li>
-    <li class="logo-lenguajes">
-      <img
-        alt="Node"
-        title="Node"
-        class="logo-lenguajes--img"
-        src="/node.webp"
-      />
-    </li>
-    <li class="logo-lenguajes">
-      <img
-        alt="Astro"
-        title="Astro"
-        class="logo-lenguajes--img"
-        src="/astro.webp"
-      />
-    </li>
-
-    <li class="logo-lenguajes">
-      <img alt="Git" title="Git" class="logo-lenguajes--img" src="/git.svg" />
-    </li>
-    <li class="logo-lenguajes">
-      <img
-        alt="GitHub"
-        title="GitHub"
-        class="logo-lenguajes--img"
-        src="/github2.svg"
-      />
-    </li>
-
-    <li class="logo-lenguajes">
-      <img
-        alt="MongoDB"
-        title="MongoDB"
-        class="logo-lenguajes--img"
-        src="/mongodb-ar21.svg"
-      />
-    </li>
+    {
+      SKILLS.map(({ alt, title, src }) => (
+        <li class="logo-lenguajes">
+          <img alt={alt} title={title} src={src} class="logo-lenguajes--img" />
+        </li>
+      ))
+    }
   </ul>
 
   <style>

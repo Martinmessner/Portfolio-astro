@@ -84,3 +84,55 @@ export const PROYECTOS = [
         github: "https://github.com/Martinmessner/FRONTENDMENTOR-LandingPage"
   }, 
 ]
+export const SKILLS = [
+  {
+    alt: "HTML",
+    title: "HTML",
+    src: "/htmll.svg"
+  },
+  {
+    alt: "CSS",
+    title: "CSS",
+    src: "/css.svg"
+  },
+  {
+    alt: "JavaScript",
+    title: "JavaScript",
+    src: "/jss.svg"
+  },
+  {
+    alt: "TypeScript",
+    title: "TypeScript",
+    src: "/tsc.png"
+  },
+  {
+    alt: "React",
+    title: "React",
+    src: "/react.png"
+  },
+  {
+    alt: "Node",
+    title: "Node",
+    src: "/node.webp"
+  },
+  {
+    alt: "Astro",
+    title: "Astro",
+    src: "/astro.webp"
+  },
+  {
+    alt: "Git",
+    title: "Git",
+    src: "/git.svg"
+  },
+  {
+    alt: "GitHub",
+    title: "GitHub",
+    src: "/github2.svg"
+  },
+  {
+    alt: "MongoDB",
+    title: "MongoDB",
+    src: "/mongodb-ar21.svg"
+  }
+];
