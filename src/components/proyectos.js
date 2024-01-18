@@ -43,40 +43,33 @@ export const PROYECTOS = [
       github: "https://github.com/Martinmessner/tateti-practica-react-vite"
     }, 
     {
-      imagen:"/navideño.PNG",
-      title_alt:"Lista navideña | GoncyPozzo",
-      title:"App de Regalos | React",
-      url :"https://regalos-navidenios.netlify.app/",
-      github: "https://github.com/Martinmessner/challenge-goncy-advency"
-    }, 
-    {
-      imagen:"/entrevista-tecnica.webp",
-      title_alt:"Entrevista Tecnica | Midudev",
-      title:"Entrevista Tecnica | Midudev",
-      url :"https://practica-de-entrevista-tenica.netlify.app/",
-      github: "https://github.com/Martinmessner/entrevista-tecnica-react-midudev-prueba"
-    }, 
+      imagen:"/ecommerce2.PNG",
+      title_alt:"Ecommerce",
+      title:"Ecommerce | JavaScript, Node, Express, MongoDB, MercadoPago",
+      url : "",
+      github: "https://github.com/Martinmessner/API-REST-Ecommerce-NodeJs"
+  },
+  {
+    imagen:"/entrevista-tecnica.webp",
+    title_alt:"Entrevista Tecnica | Midudev",
+    title:"Entrevista Tecnica | Midudev",
+    url :"https://practica-de-entrevista-tenica.netlify.app/",
+    github: "https://github.com/Martinmessner/entrevista-tecnica-react-midudev-prueba"
+  }, 
+  {
+    imagen:"/navideño.PNG",
+    title_alt:"Lista navideña | GoncyPozzo",
+    title:"App de Regalos | React",
+    url :"https://regalos-navidenios.netlify.app/",
+    github: "https://github.com/Martinmessner/challenge-goncy-advency"
+  }, 
     {
         imagen:"/paisesReact.PNG",
         title_alt:"Paises",
         title:"Paises con React & React-draggable",
         url :"https://allpaises.netlify.app/",
         github: "https://github.com/Martinmessner/React-Paises"
-    }, 
-    {
-      imagen:"/ecommerce2.PNG",
-      title_alt:"Ecommerce",
-      title:"Ecommerce | JavaScript, Node, Express, MongoDB, MercadoPago",
-      url : "",
-      github: "https://github.com/Martinmessner/API-REST-Ecommerce-NodeJs"
-  }, 
-    {
-      imagen:"/frontendmentor-landingpage.PNG",
-      title_alt:"Frontend-Mentor",
-      title:"Challenge Frontend Mentor | Clon HTML - CSS - JavaScript",       
-      url :"https://landin-page-frontendmentor.netlify.app/",
-      github: "https://github.com/Martinmessner/FRONTENDMENTOR-LandingPage"
-  }, 
+    }
 ]
 export const SKILLS = [
   {
