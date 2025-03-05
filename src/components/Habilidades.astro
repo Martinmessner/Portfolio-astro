@@ -1,0 +1,34 @@
+---
+import { SKILLS } from './proyectos';
+---
+
+<main id="skills" class="contenedor__skills" id="skills">
+  <h1 class="contenedor__skills-h1">Habilidades</h1>
+
+  <ul class="contenedor__lenguajes">
+    {
+      SKILLS.map(({ alt, title, src }) => (
+        <li class="logo-lenguajes">
+          <img alt={alt} title={title} src={src} class="logo-lenguajes--img" />
+        </li>
+      ))
+    }
+  </ul>
+
+  <style>
+    img {
+      height: 3em;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2em;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 0.8em;
+    }
+  </style>
+</main>

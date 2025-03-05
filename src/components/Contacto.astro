@@ -1,0 +1,75 @@
+<section class="contenedor__form" id="contacto">
+  <h1 class="contenedor__form--h2">Contactame</h1>
+
+  <div class="contenedor__input--div">
+    <form class="contenedor__input" method="POST" data-netlify="true">
+      <input
+        class="form__input"
+        type="text"
+        name="name"
+        autocomplete="off"
+        placeholder="Nombre"
+      />
+      <input
+        class="form__input"
+        type="email"
+        name="email"
+        autocomplete="off"
+        placeholder="Email"
+        required="true"
+      />
+      <input
+        class="form__input"
+        type="text"
+        name="asunto"
+        autocomplete="off"
+        placeholder="Asunto"
+      />
+      <textarea
+        class="form__input"
+        name="textarea"
+        rows="9"
+        required="true"
+        placeholder="Mensaje"></textarea>
+      <input class="form__input boton__enviar" type="submit" name="enviar" />
+    </form>
+  </div>
+</section>
+
+<style>
+  input::placeholder,
+  textarea::placeholder {
+    color: #dddddd;
+  }
+
+  form {
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+  }
+
+  .form__input {
+    margin: 5px;
+    padding: 0.9em;
+    border-radius: 7px;
+    border: 1px solid #dddddd;
+  }
+
+  .form__input:hover {
+    border: 1px red solid;
+  }
+
+  .boton__enviar {
+    border: 2px solid #2f2c2c;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: #dddddd;
+  }
+  .contenedor__form--h2 {
+    text-align: center;
+    padding: 1em;
+  }
+</style>

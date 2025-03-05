@@ -1,0 +1,50 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/icon-arg.ico" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v6.1.2/js/all.js"
+      integrity="sha384-11X1bEJVFeFtn94r1jlvSC7tlJkV2VJctorjswdLzqOJ6ZvYBSZQkaQVXG0R4Flt"
+      crossorigin="anonymous"></script>
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+    <style is:global>
+      html {
+        background: linear-gradient(
+          177deg,
+          rgba(37, 33, 33, 1) 0%,
+          rgba(34, 27, 38, 1) 32%,
+          rgba(0, 0, 0, 1) 100%
+        );
+        color-scheme: dark light;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </body>
+</html>

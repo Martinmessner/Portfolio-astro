@@ -1,0 +1,142 @@
+---
+import Curriculum from '../../public/Curriculum.astro';
+---
+
+<header class="contenedor__fondo--presentacion">
+  <nav>
+    <ul class="ul-header">
+      <li>
+        <a href="#inicio">Inicio</a>
+      </li>
+      <li>
+        <a href="#proyectos">Proyectos</a>
+      </li>
+      <li>
+        <a href="#skills">Skills</a>
+      </li>
+      <li>
+        <a href="#contacto">Contactame</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<section class="contenedor__section" id="inicio">
+  <h1 class="texto__presentacion">
+    Hola, Soy Martin Messner, Desarrollador Web.
+  </h1>
+  <div class="texto__completo">
+    <h2 class="texto__presentacion">De Buenos Aires, Argentina</h2>
+    <img src="/argentina.webp" alt="Argentina" title="Argentina" />
+  </div>
+
+  <ul class="iconos__presentacion">
+    <li class="iconos__li">
+      <a
+        href="https://www.linkedin.com/in/martin-gabriel-messner-98a587217/"
+        class="footer__linkedin"
+        target="_blank"
+        ><i class="fa-brands fa-linkedin linkedin"></i>Linkedin</a
+      >
+    </li>
+    <li class="iconos__li">
+      <a
+        href="https://github.com/Martinmessner?tab=repositories"
+        class="footer__instagram"
+        target="_blank"><i class="fa-brands fa-github"></i>GitHub</a
+      >
+    </li>
+
+    <li class="iconos__li">
+      <a
+        class="texto__presentacion--pdf"
+        download
+        href="/Martin Messner CV.pdf"
+      >
+      <Curriculum />
+        Curriculum 
+        </a
+      >
+    </li>
+  </ul>
+</section>
+
+<style>
+  .iconos__li {
+    border: 2px #777777 solid;
+    border-radius: 44px;
+    letter-spacing: 1px;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+  }
+
+  .texto__completo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4em;
+  }
+  .texto__completo img {
+    width: 3.1em;
+  }
+  .texto__presentacion {
+    line-height: 2;
+  }
+  .contenedor__fondo--presentacion {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+  }
+  .contenedor__fondo--presentacion > nav > ul > li > a:hover {
+    text-decoration: underline;
+  }
+  .ul-header {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    padding: 0.7em;
+    font-size: 1.2em;
+  }
+
+  .iconos__li:hover {
+    scale: 1.2;
+    transition: ease-in-out 0.4s;
+  }
+  .iconos__presentacion {
+    display: flex;
+    gap: 1.1em;
+    justify-content: center;
+    padding: 1em;
+    flex-wrap: wrap;
+  }
+  .iconos__presentacion > li > a {
+    color: #dddddd;
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+  }
+  .linkedin {
+    color: rgb(35, 98, 236);
+  }
+
+  nav > .ul-header > li > a {
+    color: #dddddd;
+  }
+
+  a {
+    font-size: 1.3em;
+  }
+
+  .contenedor__section {
+    padding-top: 4em;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .ul-header {
+      font-size: 0.9em;
+      gap: 1em;
+    }
+  }
+</style>

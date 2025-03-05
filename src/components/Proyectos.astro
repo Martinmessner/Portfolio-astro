@@ -1,0 +1,74 @@
+---
+import Externallink from '../../public/Externallink.astro';
+import OpenGithublink from '../../public/OpenGithublink.astro';
+import { PROYECTOS } from './proyectos';
+---
+
+<header class="contenedor__proyectos" id="proyectos">
+  <h1 class="contenedor__proyectos--h2">Proyectos</h1>
+</header>
+<section class="contenedor__proyecto--div">
+  {
+    PROYECTOS.map(({ imagen, title_alt, title, url, github }) => (
+      <figure class="contenedor__proyecto-explicacion">
+        <img
+          src={imagen}
+          alt={title_alt}
+          title={title}
+          class="contenedor__proyecto--img"
+        />
+        <div>
+          {url && (
+            <a rel="noopener noreferrer" href={url} target="_blank">
+              <button class="boton__div" type="submit">
+                <Externallink />
+              </button>
+            </a>
+          )}
+          <a rel="noopener noreferrer" href={github} target="_blank">
+            <button class="boton__div" type="submit">
+              <OpenGithublink />
+            </button>
+          </a>
+          <p>{title}</p>
+        </div>
+      </figure>
+    ))
+  }
+</section>
+
+<style>
+  img {
+    width: 100%;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 430px));
+    justify-content: center;
+    text-align: center;
+    gap: 3em;
+  }
+  button {
+    padding: 0.2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  p {
+     padding: 1em 1em;
+  }
+
+  button:hover {
+    transform: scale(1.2);
+  }
+
+  figure {
+    border: 2px white solid;
+  }
+  .contenedor__proyectos--h2 {
+    text-align: center;
+    padding: 1em;
+  }
+</style>
